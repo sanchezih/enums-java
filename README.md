@@ -1,5 +1,7 @@
-
 # Enum Types
+
+![GitHub last commit](https://img.shields.io/github/last-commit/sanchezih/enums-java)
+![GitHub repo size](https://img.shields.io/github/repo-size/sanchezih/enums-java)
 
 An  _enum type_  is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. Common examples include compass directions (values of NORTH, SOUTH, EAST, and WEST) and the days of the week.
 
@@ -23,3 +25,13 @@ for (Planet p : Planet.values()) {
                       p, p.surfaceWeight(mass));
 }
 ```
+
+In the following example, `Planet` is an enum type that represents the planets in the solar system. They are defined with constant mass and radius properties.
+
+Each enum constant is declared with values for the mass and radius parameters. These values are passed to the constructor when the constant is created. Java requires that the constants be defined first, prior to any fields or methods. Also, when there are fields and methods, the list of enum constants must end with a semicolon.
+
+**Note:** The constructor for an enum type must be package-private or private access. It automatically creates the constants that are defined at the beginning of the enum body. You cannot invoke an enum constructor yourself.
+
+In addition to its properties and constructor, `Planet` has methods that allow you to retrieve the surface gravity and weight of an object on each planet.
+
+Basado en: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
