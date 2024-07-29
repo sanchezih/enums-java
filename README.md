@@ -34,4 +34,4 @@ Each enum constant is declared with values for the mass and radius parameters. T
 
 In addition to its properties and constructor, `Planet` has methods that allow you to retrieve the surface gravity and weight of an object on each planet.
 
-Basado en: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+Based on: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
