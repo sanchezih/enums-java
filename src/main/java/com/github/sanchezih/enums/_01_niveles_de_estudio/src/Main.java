@@ -48,16 +48,14 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		/*
-		 * Al tener los enum en un array, puedo hacer que el usuario ingrese
-		 * directamente el numero
-		 */
+		// Al tener los enum en un array, puedo hacer que el usuario ingrese
+		// directamente el numero
 		int opcUsuario = Consola.leerEntero("Ingrese su nivel de estudios: ");
 		System.out.println("Usted eligio " + niveles[opcUsuario - 1]);
 
 		/*----------------------------------------------------------------------------*/
 
-		/* valueOf nos permitira, en base a una cadena, mostrar el nivel de estudios */
+		// valueOf nos permitira, en base a una cadena, mostrar el nivel de estudios
 		NivelDeEstudio.valueOf("PRIMARIO"); // Funciona porque es un valor esperado
 		// NivelEstudio.valueOf("primario"); // Lanza IllegalArgumentException
 	}
