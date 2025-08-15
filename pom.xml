@@ -2,19 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.sanchezih</groupId>
 	<artifactId>enums-java</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>21</maven.compiler.target>
 		<maven.compiler.source>21</maven.compiler.source>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.github.sanchezih</groupId>
@@ -22,14 +19,12 @@
 			<version>main-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
-
 	<build>
 		<plugins>
 			<plugin>
