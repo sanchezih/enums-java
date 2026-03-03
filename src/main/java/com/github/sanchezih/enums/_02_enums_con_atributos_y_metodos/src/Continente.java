@@ -2,10 +2,8 @@ package com.github.sanchezih.enums._02_enums_con_atributos_y_metodos.src;
 
 public enum Continente {
 
-    /*
-     * Cada enum es un objeto de tipo Continente. Se llamara al constructor
-     * conparametros long y double.
-     */
+    // Cada enum es un objeto de tipo Continente. Se llamara al constructor conparametros long y double.
+
     AMERICA(910000000L, 42330000), // public static final Continente AMERICA = new Continente(910000000, 42330000);
     EUROPA(731000000L, 10180000), // public static final Continente EUROPA = new Continente(731000000, 10180000);
     AFRICA(922011000L, 30370000), //
@@ -32,10 +30,6 @@ public enum Continente {
 
     /*----------------------------------------------------------------------------*/
 
-    /**
-     *
-     * @return
-     */
     public double densidadPoblacion() {
         return this.cantHabitantes / this.superficie;
     }
@@ -43,6 +37,6 @@ public enum Continente {
     @Override
     public String toString() {
         return "Continente{" + "cantHabitantes=" + cantHabitantes + ", superficie" +
-				"=" + superficie + '}';
+                "=" + superficie + '}';
     }
 }
