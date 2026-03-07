@@ -5,26 +5,37 @@ import java.util.List;
 
 public class Empresa {
 
-    private List<Persona> personas;
+	private List<Persona> personas;
 
-    /*----------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
-    public Empresa() {
-        this.personas = new ArrayList<>();
-    }
+	/**
+	 * Constructor de la clase Empresa.
+	 * 
+	 * Inicializa la lista de personas que pertenecen a la empresa.
+	 */
+	public Empresa() {
+		this.personas = new ArrayList<>();
+	}
 
-    /*----------------------------------------------------------------------------*/
+	/*----------------------------------------------------------------------------*/
 
-    public void agregarPersona(Persona persona) {
-        this.personas.add(persona);
-    }
+	public void agregarPersona(Persona persona) {
+		this.personas.add(persona);
+	}
 
-    public void mostrarPorNivel(NivelDeEstudio nivelDeEstudio) {
-        for (Persona persona : personas) {
-            if (persona.getNivelDeEstudio() == nivelDeEstudio) {
-                System.out.println(persona);
-            }
-        }
-    }
+	/**
+	 * Muestra por consola todas las personas cuyo nivel de estudio coincide con el
+	 * nivel recibido por parametro.
+	 * 
+	 * @param nivelDeEstudio
+	 */
+	public void mostrarPorNivel(NivelDeEstudio nivelDeEstudio) {
+		for (Persona persona : personas) {
+			if (persona.getNivelDeEstudio() == nivelDeEstudio) {
+				System.out.println(persona);
+			}
+		}
+	}
 
 }
