@@ -31,7 +31,7 @@ public enum Continente {
 
 	/*----------------------------------------------------------------------------*/
 
-	public double densidadPoblacion() {
+	public double getDensidadDePoblacion() {
 		return this.cantHabitantes / this.superficie;
 	}
 

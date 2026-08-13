@@ -18,10 +18,10 @@ public class Main {
 
 		/*----------------------------------------------------------------------------*/
 
-		// Se ejecuta densidadPoblacion() por cada objeto
-		System.out.println("Ejecuto densidadPoblacion() por cada objeto");
+		// Se ejecuta getDensidadDePoblacion() por cada objeto
+		System.out.println("Ejecuto getDensidadDePoblacion() por cada objeto");
 		for (int i = 0; i < continentes.length; i++) {
-			System.out.println(continentes[i].densidadPoblacion());
+			System.out.println(continentes[i].getDensidadDePoblacion());
 		}
 		System.out.println();
 
@@ -29,9 +29,10 @@ public class Main {
 
 		// Se llaman a los distintos metodos de cada enum
 		System.out.println("Llamo a distintos metodos de cada enum");
+
 		for (int i = 0; i < continentes.length; i++) {
-			System.out.println("El continente " + continentes[i].name() + " tiene" + " "
-					+ continentes[i].densidadPoblacion() + " km2");
+			System.out.println("El continente " + continentes[i].name() + " tiene "
+					+ continentes[i].getDensidadDePoblacion() + " habitantes/km2");
 		}
 	}
 
